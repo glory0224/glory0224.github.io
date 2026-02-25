@@ -1,0 +1,15 @@
+---
+layout: default
+title: 홈
+---
+
+# 안녕하세요. 지킬로 만든 웹페이지입니다.
+- 지킬 좋다.
+
+> 마크다운으로 페이지를 만들 수 있다니
+
+## 오늘 점심 뭐먹지?
+
+## 최근 포스터
+{% for post in site.posts %}
+- [{{ post.title }}] ({{ post.url }}) - {{ post.data | data : }}
